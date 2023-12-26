@@ -1,13 +1,13 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
 import React from 'react';
 
 const FlatCards = () => {
   return (
-    <View>
-      <Text style={styles.headingText}>FlatCards</Text>
+    <SafeAreaView>
+      <Text style={styles.headingText}>Fla Cards</Text>
       <View style={styles.container}>
         <View style={[styles.size, styles.red]}>
-          <Text style={styles.text}>Red</Text>
+          <Text>Red</Text>
         </View>
         <View style={[styles.green, styles.size]}>
           <Text>Green</Text>
@@ -16,7 +16,7 @@ const FlatCards = () => {
           <Text>yellow</Text>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -25,12 +25,14 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     paddingHorizontal: 10,
-    paddingVertical: 2,
+    paddingTop: 30,
   },
   container: {
     flexDirection: 'row',
     justifyContent: 'center',
     marginHorizontal: 10,
+    paddingTop: 30,
+    padding: 20,
   },
 
   size: {
