@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 10,
     paddingTop: 30,
+    color: 'white',
   },
   card: {
     backgroundColor: '#FF0000',

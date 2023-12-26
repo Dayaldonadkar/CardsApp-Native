@@ -4,7 +4,7 @@ import React from 'react';
 const FlatCards = () => {
   return (
     <SafeAreaView>
-      <Text style={styles.headingText}>Fla Cards</Text>
+      <Text style={styles.headingText}>Flt Cards</Text>
       <View style={styles.container}>
         <View style={[styles.size, styles.red]}>
           <Text>Red</Text>
@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     paddingHorizontal: 10,
     paddingTop: 30,
+    color: 'white',
   },
   container: {
     flexDirection: 'row',
